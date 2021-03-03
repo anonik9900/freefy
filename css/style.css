@@ -1,0 +1,237 @@
+/* Template css By Nicholas Impieri */
+
+/*Import Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@font-face {
+    font-family: Hacked;
+    src: url(https://hackedfont.com/HACKED.ttf);
+}
+@import url('http://fonts.cdnfonts.com/css/orange-slices');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+
+/*End Fonts*/
+
+
+/*Body And HTML Style */
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*End Body and Html Style */
+
+
+
+/*Navbar*/
+.navbar{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  font-weight: 700;
+  padding: 0 30px;
+  background-color: white;/*#3D0C02;*/
+  font-size: 16px;
+}
+
+h1 span{
+  color: black;
+  font-family: Poppins;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+h1 span:hover{
+  cursor: pointer;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+  font-family: Poppins;
+  font-size: 23px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li{
+  list-style: none;
+  color: black;
+}
+
+.navbar ul li a:hover{
+  transition: all 0.5s ease;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+/*End Navbar*/
+
+
+.descrizione{
+  width: 100%;
+  text-align: center;
+  font-family: Poppins;
+}
+
+.descrizione h1{
+  font-size: 60px;
+  padding-top: 30px;
+}
+
+.contenitore{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: Poppins;
+  font-size: 23px;
+}
+
+button.download{
+  transition: all 0.5s ease;
+  background-color: transparent;
+  border: solid 2px black;
+  font-family: Poppins;
+  font-size: 30px;
+  text-align: center;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  border-radius: 40px;
+}
+
+button.download:hover{
+  transition: all 0.5s ease;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: solid 2px black;
+}
+
+
+
+
+
+
+.editorial {
+  display: block;
+  width: 100%;
+  height: 60px;
+  max-height: 60px;
+  margin: 0;
+  z-index:5;
+  bottom:0;
+  position:absolute;
+  left:0px;
+  float:left;
+}
+
+.parallax1 > use {
+  animation: move-forever1 10s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+.parallax2 > use {
+  animation: move-forever2 8s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+.parallax3 > use {
+  animation: move-forever3 6s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+.parallax4 > use {
+  animation: move-forever4 4s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+@keyframes move-forever1 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+@keyframes move-forever2 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+@keyframes move-forever3 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+@keyframes move-forever4 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE */
+@media (max-width:780px){
+  .navbar{
+    flex-direction: column;
+    height: 140px;
+    padding: 20px;
+  }
+  .descrizione{
+    text-align: center;
+  }
+
+  .editorial {
+    display: block;
+    width: 100%;
+    height: 60px;
+    max-height: 60px;
+    margin: 0;
+    bottom: auto;
+    z-index:5;
+    position:absolute;
+    left:0px;
+    float:left;
+  }
+
+/*Fine Responsivve */
+}
